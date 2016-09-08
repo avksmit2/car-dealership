@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Car Dealership</title>
+    </head>
+    <body>
+        <h1>Car Dealership</h1>
+        <h2>You added a car!</h2>
+        <p>{{ newcar.getMakeModel }}</p>
+        <ul>
+            <li>${{ newcar.getPrice }}</li>
+            <li>Miles: {{ newcar.getMiles }}</li>
+            <li> <img src = '{{ newcar.getPicture }}'> </li>
+        </ul>
+        <a href='/'>Back to Home</a>
+    </body>
+</html>
