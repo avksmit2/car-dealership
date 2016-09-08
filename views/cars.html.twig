@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Car Dealership</title>
+    </head>
+    <body>
+        <h1>Car Dealership</h1>
+        {% if cars is not empty %}
+            <p>Here are the cars that match your price:</p>
+            {% for car in cars %}
+                <li>{{ car.getMakeModel }}</li>
+                <ul>
+                    <li>{{ car.getPrice }}</li>
+                    <li>Miles: {{ car.getMiles }}</li>
+                    <li> <img src = '{{ car.getPicture }}'> </li>
+                </ul>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>
